@@ -1,157 +1,240 @@
 <!DOCTYPE html>
 <html lang="es">
-  
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Conocé la planta de yerba mate, su historia, los tipos de mate y las tradiciones sudamericanas.">
-  <title>inforMATE | El mundo del mate</title>
-  <link rel="icon" href="favicon.ico" sizes="any">
-</head>
 
-<body>
-  <header id="inicio">
-    <img src="img/logo-informate.png" alt="Logo de inforMATE: un mate con bombilla" width="60" height="60">
-    <h1>inforMATE: el mundo del mate</h1>
-    <nav aria-label="Navegación principal">
-      <ul>
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#origenes">Orígenes</a></li>
-        <li><a href="#tipos">Tipos</a></li>
-        <li><a href="#curiosidades">Curiosidades</a></li>
-      </ul>
-    </nav>
-  </header>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conocé la planta de yerba mate, su historia, los tipos de mate y las tradiciones sudamericanas.">
+    <title>inforMATE | El mundo del mate</title>
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="stylesheet" href="styles.css">
+  </head>
 
-  <main>
-    <section id="presentacion" aria-labelledby="titulo-presentacion">
-      <h2 id="titulo-presentacion">Descubrí el mundo del mate</h2>
-      <p>Una infusión que nace de una planta sudamericana y acompaña charlas, viajes y encuentros desde hace generaciones. En esta página vas a conocer de dónde viene la yerba mate, cómo son algunos recipientes y de qué maneras se disfruta en distintos países.</p>
-      <p><a href="#origenes">Conocé más sobre el mate</a></p>
-      <img src="img/portada-mate-mesa.png" alt="Mate con yerba y bombilla sobre una mesa de madera" width="800" height="450">
-      <img src="img/hojas-mate.png" alt="Ilustración de una rama de yerba mate con varias hojas" width="260" height="411">
-    </section>
+  <body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+    <header class="site-header" id="inicio">
+      <div class="container header-content">
+        <a class="brand" href="#inicio" aria-label="inforMATE, inicio">
+          <img class="brand-icon" src="img/logo-informate.png" alt="Logo de inforMATE: un mate con bombilla" width="60" height="60">
+          <span>infor<span class="brand-accent">MATE</span></span>
+        </a>
+        <h1 class="visually-hidden">inforMATE: el mundo del mate</h1>
+        <nav class="main-nav" aria-label="Navegación principal">
+          <ul class="nav-list">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#origenes">Orígenes</a></li>
+            <li><a href="#tipos">Tipos</a></li>
+            <li><a href="#curiosidades">Curiosidades</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-    <section id="origenes" aria-labelledby="titulo-origenes">
-      <h2 id="titulo-origenes">¿De dónde viene? El origen del mate</h2>
-      <h3>Todo empieza en la planta de yerba mate</h3>
-      <p>La yerba mate se obtiene de las hojas y ramitas de <em>Ilex paraguariensis</em>, un árbol nativo de Sudamérica. Crece naturalmente en la región de la selva paranaense, que abarca zonas de Argentina, Paraguay y Brasil. Sus hojas se cosechan, se secan y se muelen para preparar la yerba que usamos en la infusión.</p>
-      <p>Antes de convertirse en una costumbre compartida, el mate fue una manera de aprovechar esa planta del monte. Con el tiempo cambiaron los recipientes y las formas de preparación, pero la yerba siguió siendo el ingrediente esencial.</p>
-      <img src="img/planta-yerba-mate.jpg" alt="Planta de yerba mate con hojas verdes y pequeñas flores blancas" width="450" height="379">
-     
+    <main id="contenido">
+      <section class="hero" id="presentacion" aria-labelledby="titulo-presentacion">
+        <div class="container hero-layout">
+          <div class="hero-copy">
+            <p class="eyebrow">De nuestra tierra, a tu ronda</p>
+            <h2 id="titulo-presentacion">Descubrí el mundo del <span>mate.</span></h2>
+            <p>Una infusión que nace de una planta sudamericana y acompaña charlas, viajes y encuentros desde hace generaciones. En esta página vas a conocer de dónde viene la yerba mate, cómo son algunos recipientes y de qué maneras se disfruta en distintos países.</p>
+            <a class="button" href="#origenes">Conocé más sobre el mate <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="hero-visual">
+            <img class="hero-photo" src="img/portada-mate-mesa.png" alt="Mate con yerba y bombilla sobre una mesa de madera" width="1672" height="941" fetchpriority="high">
+            <span class="hero-caption">Una planta. Muchas historias.</span>
+          </div>
+          <img class="hero-leaves" src="img/hojas-mate.png" alt="Ilustración de una rama de yerba mate con varias hojas" width="997" height="1578">
+        </div>
+      </section>
 
-      <article>
-        <h3>Pueblos guaraníes</h3>
-        <p>Los pueblos guaraníes conocían la planta de yerba mate mucho antes de que la bebida se difundiera por Sudamérica. Recolectaban sus hojas y las incorporaban a sus prácticas cotidianas. Su conocimiento del monte y de esta especie es una parte fundamental de la historia del mate.</p>
-      </article>
+      <section class="section container" id="origenes" aria-labelledby="titulo-origenes">
+        <p class="eyebrow">01 / Las raíces</p>
+        <h2 class="section-title" id="titulo-origenes">¿De dónde viene? <span>El origen del mate</span></h2>
+        <div class="origin-layout">
+          <div class="origin-copy">
+            <h3>Todo empieza en la planta de yerba mate</h3>
+            <p>La yerba mate se obtiene de las hojas y ramitas de <em>Ilex paraguariensis</em>, un árbol nativo de Sudamérica. Crece naturalmente en la región de la selva paranaense, que abarca zonas de Argentina, Paraguay y Brasil. Sus hojas se cosechan, se secan y se muelen para preparar la yerba que usamos en la infusión.</p>
+            <p>Antes de convertirse en una costumbre compartida, el mate fue una manera de aprovechar esa planta del monte. Con el tiempo cambiaron los recipientes y las formas de preparación, pero la yerba siguió siendo el ingrediente esencial.</p>
+          </div>
+          <figure class="plant-figure">
+            <img src="img/planta-yerba-mate.jpg" alt="Planta de yerba mate con hojas verdes y pequeñas flores blancas" width="900" height="757" loading="lazy">
+            <figcaption><em>Ilex paraguariensis</em> · Donde todo empieza.</figcaption>
+          </figure>
+        </div>
 
-      <article>
-        <h3>Expansión por la región</h3>
-        <p>Durante la época colonial, la yerba mate empezó a circular por rutas comerciales y llegó a comunidades cada vez más alejadas de su zona de origen. Así, la infusión se volvió conocida en distintos territorios, donde cada lugar desarrolló sus propias maneras de prepararla y compartirla.</p>
-      </article>
+        <div class="history-grid">
+          <article class="history-card">
+            <span class="history-number" aria-hidden="true">01</span>
+            <h3>Pueblos guaraníes</h3>
+            <p>Los pueblos guaraníes conocían la planta de yerba mate mucho antes de que la bebida se difundiera por Sudamérica. Recolectaban sus hojas y las incorporaban a sus prácticas cotidianas. Su conocimiento del monte y de esta especie es una parte fundamental de la historia del mate.</p>
+          </article>
 
-      <article>
-        <h3>Tradición actual</h3>
-        <p>Hoy el mate está presente en casas, escuelas, trabajos y viajes. Algunas personas lo toman solas y otras lo comparten en ronda. Más allá de la forma del recipiente, preparar y ofrecer un mate sigue siendo una manera sencilla de acompañar una conversación.</p>
-      </article>
-    </section>
+          <article class="history-card">
+            <span class="history-number" aria-hidden="true">02</span>
+            <h3>Expansión por la región</h3>
+            <p>Durante la época colonial, la yerba mate empezó a circular por rutas comerciales y llegó a comunidades cada vez más alejadas de su zona de origen. Así, la infusión se volvió conocida en distintos territorios, donde cada lugar desarrolló sus propias maneras de prepararla y compartirla.</p>
+          </article>
 
-    <section id="tipos" aria-labelledby="titulo-tipos">
-      <h2 id="titulo-tipos">Tipos de mate: formas y materiales</h2>
-      <p>No todos los mates se distinguen por lo mismo: algunos nombres hablan de la forma, otros del material y otros de sus terminaciones. Un mate torpedo, por ejemplo, puede estar hecho de calabaza y tener cuero o una virola de metal.</p>
+          <article class="history-card">
+            <span class="history-number" aria-hidden="true">03</span>
+            <h3>Tradición actual</h3>
+            <p>Hoy el mate está presente en casas, escuelas, trabajos y viajes. Algunas personas lo toman solas y otras lo comparten en ronda. Más allá de la forma del recipiente, preparar y ofrecer un mate sigue siendo una manera sencilla de acompañar una conversación.</p>
+          </article>
+        </div>
+      </section>
 
-      <h3>Modelos y formas</h3>
-      <ul>
-        <li>
-          <h4>Imperial</h4>
-          <img src="img/mate-imperial.jpg" alt="Mate imperial con terminaciones decorativas" width="270">
-          <p>Destaca por sus detalles decorativos, como el revestimiento de cuero y la virola metálica. «Imperial» describe un estilo de terminación que puede combinarse con distintas formas de recipiente.</p>
-        </li>
-        <li>
-          <h4>Porongo</h4>
-          <img src="img/mate-porongo.jpg" alt="Mate porongo de calabaza, con boca ancha" width="270">
-          <p>Es un recipiente de calabaza que suele ser amplio y de boca ancha. Su forma natural hace que cada pieza tenga pequeñas diferencias de tamaño y silueta, incluso cuando recibe el mismo acabado.</p>
-        </li>
-        <li>
-          <h4>Torpedo</h4>
-          <img src="img/mate-torpedo.png" alt="Mate torpedo de cuerpo alargado y base angosta" width="270">
-          <p>Se reconoce por su cuerpo alargado, que se estrecha hacia la base. Puede llevar cuero por fuera y una virola de metal en la boca; esos detalles cambian su aspecto sin modificar su forma característica.</p>
-        </li>
-      </ul>
+      <section class="section types-section" id="tipos" aria-labelledby="titulo-tipos">
+        <div class="container">
+          <p class="eyebrow">02 / Un mate para cada ronda</p>
+          <h2 class="section-title" id="titulo-tipos">Tipos de mate: <span>formas y materiales</span></h2>
+          <p class="section-intro">No todos los mates se distinguen por lo mismo: algunos nombres hablan de la forma, otros del material y otros de sus terminaciones. Un mate torpedo, por ejemplo, puede estar hecho de calabaza y tener cuero o una virola de metal.</p>
 
-      <h3>Según el material</h3>
-      <ul>
-        <li>
-          <h4>Calabaza</h4>
-          <img src="img/mate-calabaza.jpg" alt="Mate hecho con una calabaza natural" width="270">
-          <p>Es uno de los materiales tradicionales para el recipiente. Como proviene de un fruto natural, su tamaño, su forma y el grosor de sus paredes pueden variar de un mate a otro.</p>
-        </li>
-        <li>
-          <h4>Madera</h4>
-          <img src="img/mate-madera.jpg" alt="Mate tallado en madera" width="270">
-          <p>Los mates de madera se tallan en distintas formas y pueden tener acabados simples o decorados. El tipo de madera y el tratamiento de la superficie influyen en su apariencia y cuidado.</p>
-        </li>
-        <li>
-          <h4>Acero inoxidable</h4>
-          <img src="img/mate-acero.jpg" alt="Mate de acero inoxidable" width="270">
-          <p>Es una opción resistente, de superficie lisa y fácil de limpiar. Algunos modelos tienen doble pared o detalles de color, por lo que el aspecto final puede ser muy diferente al de un mate tradicional.</p>
-        </li>
-      </ul>
-    </section>
+          <h3 class="group-title">Modelos y formas</h3>
+          <ul class="card-grid">
+            <li class="mate-card">
+              <h4>Imperial</h4>
+              <img loading="lazy" src="img/mate-imperial.jpg" alt="Mate imperial con terminaciones decorativas" width="270">
+              <p>Destaca por sus detalles decorativos, como el revestimiento de cuero y la virola metálica. «Imperial» describe un estilo de terminación que puede combinarse con distintas formas de recipiente.</p>
+              <a class="card-link" href="#material-calabaza">Conocé su material <span aria-hidden="true">↗</span></a>
+            </li>
+            <li class="mate-card">
+              <h4>Porongo</h4>
+              <img loading="lazy" src="img/mate-porongo.jpg" alt="Mate porongo de calabaza, con boca ancha" width="270">
+              <p>Es un recipiente de calabaza que suele ser amplio y de boca ancha. Su forma natural hace que cada pieza tenga pequeñas diferencias de tamaño y silueta, incluso cuando recibe el mismo acabado.</p>
+              <a class="card-link" href="#material-calabaza">Conocé su material <span aria-hidden="true">↗</span></a>
+            </li>
+            <li class="mate-card">
+              <h4>Torpedo</h4>
+              <img loading="lazy" src="img/mate-torpedo.png" alt="Mate torpedo de cuerpo alargado y base angosta" width="270">
+              <p>Se reconoce por su cuerpo alargado, que se estrecha hacia la base. Puede llevar cuero por fuera y una virola de metal en la boca; esos detalles cambian su aspecto sin modificar su forma característica.</p>
+              <a class="card-link" href="#material-calabaza">Conocé su material <span aria-hidden="true">↗</span></a>
+            </li>
+          </ul>
 
-    <section id="curiosidades" aria-labelledby="titulo-curiosidades">
-      <h2 id="titulo-curiosidades">El mate alrededor de Sudamérica</h2>
-      <p>La misma planta está presente en costumbres que cambian de un lugar a otro. Elegí un punto del mapa para ir a la información de ese país. También podés usar la lista de enlaces que aparece debajo.</p>
+          <h3 class="group-title">Según el material</h3>
+          <ul class="card-grid">
+            <li class="mate-card" id="material-calabaza">
+              <h4>Calabaza</h4>
+              <img loading="lazy" src="img/mate-calabaza.jpg" alt="Mate hecho con una calabaza natural" width="270">
+              <p>Es uno de los materiales tradicionales para el recipiente. Como proviene de un fruto natural, su tamaño, su forma y el grosor de sus paredes pueden variar de un mate a otro.</p>
+              <a class="card-link" href="#cuidados">Cómo cuidarlo <span aria-hidden="true">↗</span></a>
+            </li>
+            <li class="mate-card">
+              <h4>Madera</h4>
+              <img loading="lazy" src="img/mate-madera.jpg" alt="Mate tallado en madera" width="270">
+              <p>Los mates de madera se tallan en distintas formas y pueden tener acabados simples o decorados. El tipo de madera y el tratamiento de la superficie influyen en su apariencia y cuidado.</p>
+              <a class="card-link" href="#cuidados">Cómo cuidarlo <span aria-hidden="true">↗</span></a>
+            </li>
+            <li class="mate-card">
+              <h4>Acero inoxidable</h4>
+              <img loading="lazy" src="img/mate-acero.jpg" alt="Mate de acero inoxidable" width="270">
+              <p>Es una opción resistente, de superficie lisa y fácil de limpiar. Algunos modelos tienen doble pared o detalles de color, por lo que el aspecto final puede ser muy diferente al de un mate tradicional.</p>
+              <a class="card-link" href="#cuidados">Cómo cuidarlo <span aria-hidden="true">↗</span></a>
+            </li>
+          </ul>
+          <aside class="care-note" id="cuidados" aria-labelledby="titulo-cuidados">
+            <h3 id="titulo-cuidados">Un buen mate también se cuida.</h3>
+            <p>Después de usarlo, retirá la yerba, enjuagá el recipiente y dejalo secar en un lugar ventilado. Para el curado de la calabaza o la madera y el lavado de cada modelo, seguí las indicaciones de su fabricante.</p>
+          </aside>
+        </div>
+      </section>
 
-      <img src="img/mapa-sudamerica.svg" alt="Mapa de Sudamérica con cuatro puntos: 1 Argentina, 2 Paraguay, 3 Uruguay y 4 Brasil" width="400" height="570" usemap="#mapa-mate">
-     
+      <section class="section container" id="curiosidades" aria-labelledby="titulo-curiosidades">
+        <p class="eyebrow">03 / Una costumbre que cruza fronteras</p>
+        <h2 class="section-title" id="titulo-curiosidades">El mate alrededor de <span>Sudamérica</span></h2>
+        <p>La misma planta está presente en costumbres que cambian de un lugar a otro. Tocá un punto del mapa para mostrar la información de ese país en el panel. También podés usar la lista de enlaces que aparece debajo del mapa.</p>
 
-      <map name="mapa-mate">
-        <area shape="circle" coords="128,368,13" href="#mate-argentina" alt="1: Argentina" title="Argentina">
-        <area shape="circle" coords="187,306,13" href="#mate-paraguay" alt="2: Paraguay" title="Paraguay">
-        <area shape="circle" coords="197,400,13" href="#mate-uruguay" alt="3: Uruguay" title="Uruguay">
-        <area shape="circle" coords="260,220,13" href="#mate-brasil" alt="4: Brasil" title="Brasil">
-      </map>
+        <div class="countries-layout">
+          <div class="map-panel" id="mapa-paises" tabindex="-1">
+            <div class="map-figure">
+              <img class="region-map" src="img/mapa-sudamerica.svg" alt="Mapa de Sudamérica con cuatro puntos: 1 Argentina, 2 Paraguay, 3 Uruguay y 4 Brasil" width="400" height="570" usemap="#mapa-mate" loading="lazy">
+              <!-- Los enlaces en porcentajes acompañan a la imagen en todos los tamaños. -->
+              <a class="map-point map-point-argentina" href="#mate-argentina" aria-label="1: conocer el mate en Argentina">1</a>
+              <a class="map-point map-point-paraguay" href="#mate-paraguay" aria-label="2: conocer el mate en Paraguay">2</a>
+              <a class="map-point map-point-uruguay" href="#mate-uruguay" aria-label="3: conocer el mate en Uruguay">3</a>
+              <a class="map-point map-point-brasil" href="#mate-brasil" aria-label="4: conocer el mate en Brasil">4</a>
+              <div class="map-hint">
+                <img src="img/indicador-click.png" alt="Mano indicando dónde hacer click" width="44" height="52" loading="lazy">
+                <p>Hacé click en un punto para conocer más</p>
+              </div>
+            </div>
 
-      <ol>
-        <li><a href="#mate-argentina">Argentina</a></li>
-        <li><a href="#mate-paraguay">Paraguay</a></li>
-        <li><a href="#mate-uruguay">Uruguay</a></li>
-        <li><a href="#mate-brasil">Brasil</a></li>
-      </ol>
+            <!-- El mapa nativo conserva sus coordenadas originales para la versión sin CSS. -->
+            <map class="native-map" name="mapa-mate">
+              <area shape="circle" coords="128,368,13" href="#mate-argentina" alt="1: Argentina" title="Argentina">
+              <area shape="circle" coords="187,306,13" href="#mate-paraguay" alt="2: Paraguay" title="Paraguay">
+              <area shape="circle" coords="197,400,13" href="#mate-uruguay" alt="3: Uruguay" title="Uruguay">
+              <area shape="circle" coords="260,220,13" href="#mate-brasil" alt="4: Brasil" title="Brasil">
+            </map>
 
-      <article id="mate-argentina">
-        <h3>Argentina</h3>
-        <p>El mate suele acompañar momentos de estudio, trabajo o descanso. También es común compartirlo en una ronda, donde una persona prepara la infusión y pasa el recipiente a las demás.</p>
-        <img src="img/mate-argentina.jpg" alt="Mate de madera con bombilla y termo en una mesa" width="300">
-   
-      </article>
+            <p class="map-caption">Cuatro países, muchas formas de compartir.</p>
+            <ol class="country-links">
+              <li><a href="#mate-argentina">Argentina</a></li>
+              <li><a href="#mate-paraguay">Paraguay</a></li>
+              <li><a href="#mate-uruguay">Uruguay</a></li>
+              <li><a href="#mate-brasil">Brasil</a></li>
+            </ol>
+          </div>
 
-      <article id="mate-paraguay">
-        <h3>Paraguay</h3>
-        <p>Además del mate caliente, es muy conocido el tereré: una preparación con agua fría que resulta especialmente popular en los días de calor y que también se comparte entre amigos o familiares.</p>
-        <img src="img/mate-paraguay.jpg" alt="Tereré paraguayo con hielo, jarra de agua fría y bombilla" width="300">
-      </article>
+          <div class="country-panel">
+            <!-- :target muestra solamente el país elegido, sin JavaScript. -->
+            <article class="country-card" id="mate-argentina" aria-labelledby="titulo-argentina" tabindex="-1">
+              <a class="country-close" href="#mapa-paises" aria-label="Cerrar información de Argentina">×</a>
+              <h3 id="titulo-argentina">Argentina</h3>
+              <p>El mate suele acompañar momentos de estudio, trabajo o descanso. También es común compartirlo en una ronda, donde una persona prepara la infusión y pasa el recipiente a las demás.</p>
+              <img loading="lazy" src="img/mate-argentina.jpg" alt="Mate de madera con bombilla y termo en una mesa" width="300">
 
-      <article id="mate-uruguay">
-        <h3>Uruguay</h3>
-        <p>Es habitual ver personas que llevan su mate y su termo durante el día. Esa costumbre permite preparar la bebida en distintos lugares, desde una plaza hasta el camino al trabajo.</p>
-        <img src="img/mate-uruguay.jpg" alt="Mate uruguayo con bombilla junto a un termo" width="300">
-      </article>
+            </article>
 
-      <article id="mate-brasil">
-        <h3>Brasil</h3>
-        <p>En el sur del país se toma chimarrão, una forma local de preparar yerba mate. Suele servirse en una cuia y conserva una molienda y una presentación propias de esa tradición.</p>
-        <img src="img/mate-brasil.jpg" alt="Chimarrão brasileño servido en una cuia con bombilla" width="300">
-      </article>
+            <article class="country-card" id="mate-paraguay" aria-labelledby="titulo-paraguay" tabindex="-1">
+              <a class="country-close" href="#mapa-paises" aria-label="Cerrar información de Paraguay">×</a>
+              <h3 id="titulo-paraguay">Paraguay</h3>
+              <p>Además del mate caliente, es muy conocido el tereré: una preparación con agua fría que resulta especialmente popular en los días de calor y que también se comparte entre amigos o familiares.</p>
+              <img loading="lazy" src="img/mate-paraguay.jpg" alt="Tereré paraguayo con hielo, jarra de agua fría y bombilla" width="300">
+            </article>
 
-      <p>Si querés seguir investigando, <a href="https://es.wikipedia.org/wiki/Mate_(infusi%C3%B3n)" target="_blank" rel="noopener noreferrer">leé más sobre la historia del mate</a>.</p>
-    </section>
-  </main>
+            <article class="country-card" id="mate-uruguay" aria-labelledby="titulo-uruguay" tabindex="-1">
+              <a class="country-close" href="#mapa-paises" aria-label="Cerrar información de Uruguay">×</a>
+              <h3 id="titulo-uruguay">Uruguay</h3>
+              <p>Es habitual ver personas que llevan su mate y su termo durante el día. Esa costumbre permite preparar la bebida en distintos lugares, desde una plaza hasta el camino al trabajo.</p>
+              <img loading="lazy" src="img/mate-uruguay.jpg" alt="Mate uruguayo con bombilla junto a un termo" width="300">
+            </article>
 
-  <footer>
-    <p><strong>inforMATE</strong> — Tradición que nos une.</p>
-    <p>Agustin Valledor · 3ro CSTC · 2026</p>
-  </footer>
-</body>
+            <article class="country-card" id="mate-brasil" aria-labelledby="titulo-brasil" tabindex="-1">
+              <a class="country-close" href="#mapa-paises" aria-label="Cerrar información de Brasil">×</a>
+              <h3 id="titulo-brasil">Brasil</h3>
+              <p>En el sur del país se toma chimarrão, una forma local de preparar yerba mate. Suele servirse en una cuia y conserva una molienda y una presentación propias de esa tradición.</p>
+              <img loading="lazy" src="img/mate-brasil.jpg" alt="Chimarrão brasileño servido en una cuia con bombilla" width="300">
+            </article>
+            <div class="country-placeholder">
+              <p class="eyebrow">Una costumbre, muchas historias</p>
+              <h3>Una misma planta, distintas culturas.</h3>
+              <p>La forma de tomar mate cambia entre las distintas culturas del mundo. En Sudamérica, cada país le da su propio carácter: se disfruta caliente o frío, en distintos recipientes y con diferentes maneras de preparar la yerba.</p>
+              <p>Más allá de esas diferencias, el mate acompaña encuentros y momentos de todos los días. Explorá el mapa y descubrí qué hace especial a cada tradición.</p>
+            </div>
+          </div>
+        </div>
+
+        <aside class="recommended-link">
+          <div>
+            <p class="eyebrow">Para seguir con la ronda</p>
+            <h3>Siempre hay una historia más.</h3>
+            <p>Si querés seguir investigando, conocé más sobre la historia del mate en Wikipedia.</p>
+          </div>
+          <a class="button" href="https://es.wikipedia.org/wiki/Mate_(infusi%C3%B3n)" target="_blank" rel="noopener noreferrer">Seguí leyendo <span aria-hidden="true">↗</span><span class="visually-hidden"> sobre la historia del mate (se abre en otra pestaña)</span></a>
+        </aside>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <div>
+          <a class="brand footer-brand" href="#inicio">infor<span class="brand-accent">MATE</span></a>
+          <p>Tradición que nos une.</p>
+        </div>
+        <p class="footer-credit">Agustin Valledor <span aria-hidden="true">·</span> 3ro CSTC <span aria-hidden="true">·</span> 2026</p>
+        <a class="back-top" href="#inicio">Volver arriba <span aria-hidden="true">↑</span></a>
+      </div>
+    </footer>
+  </body>
 </html>
